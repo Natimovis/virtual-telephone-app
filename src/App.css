@@ -1,22 +1,320 @@
-.App {
+html {
+  height:100vh;
+  background-color: whitesmoke;
+}
+
+body {
+  height:inherit;
+}
+
+#root {
+  height:inherit;
+  background-color: whitesmoke
+}
+
+#app {
+  height:100%;
+}
+
+.homeContainer {
+  background-image: url("https://images.unsplash.com/photo-1519010470956-6d877008eaa4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+  height: 100vh;
+  color: rgba(247, 247, 247, 0.979);
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  padding-top: 7vh;
 }
 
-.App-logo {
-  height: 40vmin;
+.addContactForm {
+  height:95vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  background-color: rgb(247, 247, 247);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#login {
+  margin-right: 5vw;
+  margin-top: 2%;
+  background-color: rgba(247, 247, 247, 0.979);
+}
+
+#navDiv {
+  width: 80%;
+  height: 10vh;
+}
+
+#navLink {
+  color: black;
+}
+
+.header {
+  height:8vh;
+  background: rgb(231, 231, 231);
+}
+
+input {
+  width: 80%;
+  align-self: center;
+  padding-top: 2%;
+  background-color: rgba(247, 247, 247, 0.979);
+}
+
+#first {
+  align-self: center;
+}
+
+#last {
+  align-self: center;
+}
+
+#phone {
+  align-self: center;
+  margin-bottom: 7vh;
+}
+
+#input1 {
+  margin-bottom: 5vh;
+}
+
+#input2 {
+  margin-bottom: 5vh;
+}
+
+#input3 {
+  margin-bottom: 1vh;
+}
+
+
+#button1 {
+  margin-bottom: 2vh;
+  background-color: rgba(247, 247, 247, 0.979);
+}
+
+#button2 {
+  margin-bottom: 2vh;
+  background-color: rgba(247, 247, 247, 0.979);
+}
+
+.addContactButtons {
+display: flex;
+justify-content: space-evenly;
+margin-bottom: 8vh;
+}
+
+.viewContacts {
+  background-color:whitesmoke;
+  margin-top: 1%;
+  padding-top: 0.4vh;
+  padding-bottom: 0.4vh;
+}
+
+#viewContactHeader {
+  background-color:whitesmoke;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-left: 20vw;
+}
+
+#button3 {
+  background-color: rgba(247, 247, 247, 0.979);
+  margin-left: 5vw;
+}
+
+#button4 {
+  background-color: rgba(247, 247, 247, 0.979);
+  margin-left: 5vw;
+}
+
+#viewNotes {
+  background-color: rgba(247, 247, 247, 0.979);
+  margin-left: 5vw;
+}
+
+
+#contactNames {
+  margin-left: 5vw;
+}
+
+.editContact {
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: whitesmoke;
+  margin-top:4vh;
+}
+
+.buttonClass {
+  margin-bottom: 10vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#input6 {
+  margin-bottom: 7vh;
+}
+
+#input5 {
+  margin-bottom: 5vh;
+}
+
+#input4 {
+  margin-bottom: 5vh;
+}
+
+.confirmation {
+  margin-bottom: 12vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  background-color: whitesmoke;
 }
 
-.App-link {
-  color: #09d3ac;
+.buttonClass2 {
+  padding-bottom: 4.5vh;
+  margin-bottom:5vh;
+}
+
+#button5 {
+  background-color: rgba(247, 247, 247, 0.979);
+}
+
+#button6 {
+  background-color: rgba(247, 247, 247, 0.979);
+}
+
+#button7 {
+  background-color: rgba(247, 247, 247, 0.979);
+  margin-right: 4vw;
+}
+
+#button8 {
+  background-color: rgba(247, 247, 247, 0.979);
+ margin-right: 5vw;
+}
+
+.contactNotes {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 10vh;
+}
+#noteNames {
+  margin-right: 10vw;
+}
+#noteName {
+  font-size: 2em;
+}
+
+#noteDate {
+  font-size: 1.1em;
+}
+
+#noteText {
+  padding-top: 3vh;
+  padding-bottom: 4vh;
+}
+
+.notesMapped {
+  display:flex;
+  width: 80%;
+  flex-direction: column;
+  background-color:whitesmoke;
+  margin-top: 4%;
+  padding-top: 0.4vh;
+  padding-bottom: 0.4vh;
+}
+
+#contactsDiv {
+  margin-left: 4vw;
+  margin-right: 4vw;
+  background-color: whitesmoke;
+}
+
+#noteButtons {
+  display:flex;
+  justify-content: flex-start;
+  margin-left: 10vw;
+}
+
+button {
+  cursor: pointer;
+}
+
+#noteButton1 {
+  background-color: rgba(247, 247, 247, 0.979);
+  margin-right: 5vw;
+}
+
+#noteButton2 {
+  background-color: rgba(247, 247, 247, 0.979);
+}
+
+#noteButton3 {
+  background-color: rgba(247, 247, 247, 0.979);
+}
+
+#deleteNote {
+  margin-left: 5vw;
+}
+
+#viewNote {
+  margin-left: 5vw;
+}
+
+#notesMapped {
+  justify-self: center;
+}
+
+#viewNotesDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 5vh;
+}
+
+.addNoteForm {
+  width: 100vw;
+  display:flex;
+  flex-direction: column;
+}
+
+#abc {
+  margin-left: 10vw;
+  background-color: rgba(247, 247, 247, 0.979);
+
+}
+
+#noteCaption {
+  background-color: rgba(247, 247, 247, 0.979);
+  height: 1vh;
+  width: 65vw;
+}
+
+#noteText {
+  background-color: rgba(247, 247, 247, 0.979);
+  width:80vw;
+  align-self: center;
+}
+
+
+
+
+
+
+
+@media(min-width: 415px) {
+  .homeContainer {
+      background-image: url("https://images.unsplash.com/photo-1444723121867-7a241cacace9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+      height: 100%;
+      width: 100%;
+  }
+  #root{
+      height:100%;
+  }
 }
