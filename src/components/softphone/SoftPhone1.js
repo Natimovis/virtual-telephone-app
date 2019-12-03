@@ -2,6 +2,7 @@ import axios from 'axios';
 import Twilio from 'twilio-client';
 // import { classDeclaration } from '@babel/types';
 
+
 export default function () {
     var speakerDevices = document.getElementById('speaker-devices');
     var ringtoneDevices = document.getElementById('ringtone-devices');
@@ -12,7 +13,7 @@ export default function () {
     var device;
 
     log('Requesting Capability Token...');
-    axios.get("http://localhost:6505/token/")
+    axios.get('/token/')
       .then(function (response) {
         let data = response.data;
         log('Got a token.');

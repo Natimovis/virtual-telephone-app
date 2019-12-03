@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path'); // Usually moved to the start of file
 const express = require('express');
 const app = express();
 const massive = require('massive');
@@ -20,11 +21,12 @@ app.use(session({
     }
 }));
 
+
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*'),
     res.header('Access-Control-Allow_Methods', 'GET');
     next();
-  });
+});
 
 massive(CONNECTION_STRING).then(db => {
     app.set('db', db);
@@ -49,5 +51,8 @@ app.get('/api/contact/notes/:contact_id', notesController.getNotes) // get notes
 app.put('/api/notes/:contact_id/:note_id', notesController.edit) // user can edit their notes
 app.delete('/api/notes/:contact_id/:note_id', notesController.delete) // user can delete notes
 
+app.get('*', (req, res)=>{
+    res.sendFile(path.join(__dirname, '../build/index.html'));
+});
 
 app.listen(SERVER_PORT, () => console.log(`Server listening on ${SERVER_PORT}`));
